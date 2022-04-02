@@ -1,0 +1,24 @@
+main {
+    position:relative;
+    
+}
+
+
+// class sliding scroll
+
+.slide-hide-left {
+    transform:translateX(-120%)
+}
+
+.slide-hide-right {
+    transform:translateX(160%)
+}
+
+.slide-img-hide {
+    opacity:0;
+}
+
+.slide-active {
+    opacity:1;
+    transform: translate(0%);
+}

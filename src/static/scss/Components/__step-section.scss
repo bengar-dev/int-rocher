@@ -1,0 +1,152 @@
+.step {
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    height:100vh;
+    max-height: 100%;
+    background:$bg-primary;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .step1-img {
+        height:auto;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:right;
+        filter:blur(5px);
+    }
+    .step2-img {
+        height:auto;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:left-bottom;
+        filter:blur(5px);
+    }
+    .step-text {
+        position:absolute;
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .step-img-footer {
+            padding:0px 10px;
+            position:absolute;
+            top:10%;
+            width:100%;
+            height:180px;
+            object-fit: cover;
+            border-radius:25px;
+            transition:all 1000ms 250ms ease-in-out;
+        }
+    }
+    .step-text-card {
+        position:absolute;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px $shadow;
+        width:80%;
+        padding:60px 10px 15px 10px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        top:30%;
+        transition: all 1000ms ease-in-out;
+        .clock {
+            padding:18px;
+            font: normal normal 300 30px/24px $open-sans;
+            font-weight: 500;
+            color:$secondary;
+        }
+        h1 {
+            margin:0;
+            padding:0;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font: normal normal 600 24px/33px $open-sans;
+            span {
+                text-transform: uppercase;
+            font: normal normal 600 24px/33px $open-sans;
+            }
+        }
+        p {
+            text-align: center;
+            margin:0;
+            padding:27px 0px;
+            font: normal normal normal 14px/24px $open-sans;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            color:$primary;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .step {
+            margin-top:10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width:90%;
+            max-height: 100vh;
+            &:nth-of-type(2) {
+                flex-direction: row-reverse;
+                .step-text {
+                    .step-text-card {
+                        width:30%;
+                        top:0;
+                        left:0;
+                        right:auto;
+                    }
+                    .step-img-footer {
+                        top:auto;
+                        bottom:15%;
+                        left:0;
+                        width:50%;
+                        border-radius:0;
+                    }
+                }
+            }
+            .step1-img {
+                width:70%;
+                filter:blur(0);
+            }
+            .step2-img {
+                width:70%;
+                height: 100%;
+                object-fit: cover;
+                filter:blur(0);
+            }
+            .step-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .step-img-footer {
+                    top:auto;
+                    bottom:15%;
+                    right:0;
+                    width:50%;
+                    border-radius:0;
+                }
+                .step-text-card {
+                    position:absolute;
+                    background-color: transparent;
+                    box-shadow: none;
+                    width:30%;
+                    top:10%;
+                    left:auto;
+                    right:0;
+                }
+            }
+        }
+    }
+}

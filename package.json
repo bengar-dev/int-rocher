@@ -1,0 +1,11 @@
+{
+  "name": "diadao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./src/static/scss/main.scss:./src/static/dist/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

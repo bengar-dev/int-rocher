@@ -1,0 +1,49 @@
+@import 'Base/_fonts';
+@import 'Utils/_var';
+@import 'Components/_anims';
+@import 'Components/__step-section';
+@import 'Components/_offer-section';
+@import 'Layouts/_header';
+@import 'Layouts/_slider';
+@import 'Layouts/_content';
+@import 'Layouts/_footer';
+
+*, ::before, ::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $open-sans;
+    background: $bg-primary;
+}
+
+.up-to-top {
+    display: block;
+    position:fixed;
+    z-index: 50;
+    bottom:10px;
+    right:10px;
+    top:auto;
+    left:auto;
+    padding:10px;
+    border:0;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    color:$third;
+    background-color: $third-alt;
+    cursor: pointer;
+    opacity:1;
+    transition: all 250ms ease-in-out;
+    &:hover {
+        color: $third-alt;
+        background-color: $third;
+        box-shadow: 0px 10px 10px $shadow;
+    }
+}
+
+.hide-btn {
+    opacity:0;
+}

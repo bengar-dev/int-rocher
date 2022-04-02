@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=1">
+    <meta http-equiv="content-language" content="fr" />
+    <meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport' />
+    <title>Yves Rocher - La grée des landes</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/webfonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="static/dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9306a1ab8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <button class='burger-menu'><i class='fas fa-bars'></i></button>
+        <nav class='nav-menu'>
+            <ul>
+                <li><a href="#" alt='Accueil'>Accueil</a></li>
+                <li><a href="#" alt='Lien 1'>Lien #1</a></li>
+                <li><a href="#" alt='Lien 2'>Lien #2</a></li>
+            </ul>
+        </nav>
+        <img src='./img/assets/logo.png'>
+        <button class='reserve'>Réserver</button>
+    </header>
+
+    <div id='slider'>
+        <div class='slider-show'>
+            <img class='active' src="./img/assets/header.jpg" />
+            <img src='./img/assets/header2.jpg' />
+        </div>  
+        <div class='slide-btn'>
+            <button id='btn-prev'><img src='./img/assets/arrow_left.png' /></button>
+            <button id='btn-next'><img src='./img/assets/arrow_right.png' /></button>
+        </div>
+        <div class='slide-content'>
+            <img src='./img/assets/natural_slowlife.png' />
+            <h1>Un temps pour retrouver, dans la nature, l’essence même du bien-être</h1>
+            <button id='discover-btn'>Découvrir</button>
+        </div>
+        <div class='slide-footer'>
+            <p>Tel : +33 (0)2 99 08 50 50 – resa.hotel@yrnet.com</p>
+        </div>
+    </div>
+
+    <main>
+        <button id='up-to-top' class='up-to-top hide-btn'><i class='fas fa-arrow-up'></i></button>
+        <section id='first-step' class='step'>
+            <img src="./img/assets/Shoot1-433-15.jpg" class='step1-img' id='bg-img-1'/>
+            <div class='step-text'>
+                <div class='step-text-card slide-hide-left' id='text-1'>
+                    <span class="clock">9:23</span>
+                    <h1>Un doux réveil</h1>
+                    <p>Laissez la nature vous réveiller tout en douceur</p>
+                </div>
+                <img src="./img/assets/suite6-354-15.jpg" class='step-img-footer slide-img-hide'  id='img-1' />
+            </div>
+        </section>
+
+        <section id='second-step' class='step'>
+            <img src="./img/assets/chambre22-123-15.jpg" class='step2-img' id='bg-img-2'/>
+            <div class='step-text'>
+                <div class='step-text-card slide-hide-right' id='text-2'>
+                    <span class="clock">11:07</span>
+                    <h1><span>Détente.</span><span>Relaxation.</span><span>Silence.</span></h1>
+                    <p>Se ressourcer, se retrouver... Un rituel Pour soi pour une douce entrée en matière</p>
+                </div>
+                <img src="./img/assets/YRshoot1-2322-15.jpg" class='step-img-footer slide-img-hide' id='img-2' />
+            </div>
+        </section>
+
+        <div class='sep-line'></div>
+
+        <section id='offers' class='offers'>
+            <article id='noel-offer' class='slide-hide-right'>
+                <img src="./img/assets/offre1.jpg" />
+                <div class="offer-content">
+                    <h2>Noël à la grée des landes</h2>
+                    <div class='offer-content-text'>
+                        <p>Le bien être s'invite à Noël</p>
+                    </div>
+                    <div class='offer-content-info'>
+                        <p>490 EUR</p>
+                        <div class='offer-content-info-alt'>
+                            <p>2 personnes</p>
+                            <p>1 nuitée</p>
+                        </div>
+                    </div>
+                    <button>En savoir plus</button>
+                </div>
+            </article>
+
+            <article id='newyear-offer' class='slide-hide-left'>
+                <img src="./img/assets/offre2.jpg" />
+                <div class="offer-content">
+                    <h2>Réveillon de la Saint-Sylvestre</h2>
+                    <div class='offer-content-text'>
+                        <p>Un séjour d'exception pour la fin de l'année à partager avec vos amis ou votre famille. <br />Réservation jusqu'au 20/12/2017.</p>
+                    </div>
+                    <div class='offer-content-info'>
+                        <p>1042 EUR</p>
+                        <div class='offer-content-info-alt'>
+                            <p>2 personnes</p>
+                            <p>1 nuitée</p>
+                        </div>
+                    </div>
+                    <button>En savoir plus</button>
+                </div>
+            </article>
+
+            <article id='box-offer' class='slide-hide-right'>
+                <img src="./img/assets/offre3.jpg" />
+                <div class="offer-content">
+                    <h2>Coffrets cadeaux</h2>
+                    <div class='offer-content-text'>
+                        <ul>
+                            <li>Séjour</li>
+                            <li>Soins & Bien-être</li>
+                            <li>Gastronomie</li>
+                        </ul>
+                        <ul>
+                            <li>Cabane d'exception</li>
+                            <li>Chèque Cadeau</li>
+                        </ul>
+                    </div>
+                    <div class='offer-content-info'>
+                        <p>48 EUR</p>
+                        <div class='offer-content-info-alt'>
+                            <p>2 personnes</p>
+                        </div>
+                    </div>
+                    <button>En savoir plus</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <img src="./img/assets/logo.png" />
+    </footer>
+    <script src="static/dist/js/script.js"></script>
+</body>
+</html>
