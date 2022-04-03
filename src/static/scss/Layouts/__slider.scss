@@ -140,3 +140,17 @@
     }
 }
 
+@media screen and (max-height: 479px)
+{
+    .slide-content {
+        width:100%;
+        margin:0 auto 0 auto;
+        h1 {
+            color: $third;
+        }
+        button {
+            display:none;
+        }
+    }
+}
+

@@ -129,7 +129,7 @@
   color: #624835;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 600px) {
   main {
     display: flex;
     flex-direction: column;
@@ -249,9 +249,10 @@
   display: flex;
   justify-content: space-between;
 }
-#offers article .offer-content-info p {
+#offers article .offer-content-info h3 {
   margin: 0;
   padding: 0;
+  color: #624835;
   font: normal normal 300 24px/33px "Open Sans", sans-serif;
 }
 #offers article .offer-content-info-alt {
@@ -297,7 +298,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  #offers article .offer-content-info p {
+  #offers article .offer-content-info h3 {
     margin: 0;
     padding: 0;
     font: normal normal 300 24px/33px "Open Sans", sans-serif;
@@ -369,7 +370,7 @@
     justify-content: space-between;
     height: 50px;
   }
-  #offers article .offer-content-info p {
+  #offers article .offer-content-info h3 {
     margin: 0;
     padding: 0;
   }
@@ -606,6 +607,18 @@ header .reserve {
     background: #7998BC;
     color: #2D3947;
     border: 1px solid #7998BC;
+  }
+}
+@media screen and (max-height: 479px) {
+  .slide-content {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+  .slide-content h1 {
+    color: #7998BC;
+  }
+  .slide-content button {
+    display: none;
   }
 }
 main {
